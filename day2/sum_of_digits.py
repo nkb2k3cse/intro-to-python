@@ -1,7 +1,7 @@
 '''
 Program to find sum of digits of a number
 '''
-n = int(input())
+n = int(input(" Enter a number : "))
 
 # say n = 1234, how do you compute the sum of the digits?
 # you see all the digits, 1, 2, 3, 4, and add them up in a go, boom => 10 is the answer
@@ -28,11 +28,13 @@ n = int(input())
 '''
 
 sum = 0
+count_of_digits=0
 while (n > 0):
   d = n % 10
   sum += d # shorthand for sum = sum + d
   n //= 10 # shorthand for n = n//10
-print(sum)
+  count_of_digits+=1
+print(f'sum is :  {sum} and count_of_digits :  {count_of_digits} ')
 
 # Try yourself:
 # 1. Count digits in a number
